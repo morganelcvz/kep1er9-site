@@ -1,0 +1,322 @@
+:root {
+  --violet-k: #A97DDB;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  /*********Barre de Navigation*********/
+  /*********Header*********/
+  /*********SECTION MEMBRES*********/
+  /*********SECTION CHANSONS*********/
+  /*********SECTION FIN*********/
+}
+body .navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #A97DDB;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+body .navbar img {
+  width: 20%;
+  padding: 15px;
+}
+body .navbar a {
+  color: var(--violet-k);
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+body .navbar a:hover {
+  color: var(--violet-k);
+}
+body header {
+  background-image: url(../img/scene/group1.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+}
+body header titre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body header titre h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 800;
+  font-style: italic;
+  text-shadow: 0px 0px 15px #E2D6EE, 0px 0px 15px #E2D6EE;
+  margin-top: 8rem;
+}
+body .titre-section {
+  width: 100%;
+  height: 390px;
+  background: url(../img/kep3_section.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #C1AED7;
+  border-bottom: 1px solid #C1AED7;
+}
+body .titre-section h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-style: italic;
+  color: var(--violet-k);
+}
+body .members {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+body .members #profile {
+  flex: 1;
+  background: url(https://placehold.co/200x460.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  margin: 0px;
+  gap: 0;
+}
+body .members #profile .profile-slider {
+  margin-top: 30rem;
+  transition: 0.7s ease-out;
+  width: 100%;
+}
+body .members #profile .profile-slider:hover {
+  margin-top: 10rem;
+  transition: 0.7s ease-in;
+}
+body .members #profile .profile-slider .p-trs {
+  width: 0px;
+  height: 0px;
+  border-bottom: 50px solid rgba(169, 125, 219, 0.8);
+  border-right: 200px solid transparent;
+}
+body .members #profile .profile-slider .p-bg {
+  background: rgba(169, 125, 219, 0.8);
+  margin-top: 0px;
+  transition: 1s ease-out;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
+body .members #profile .profile-slider .p-bg:hover {
+  transition: 1s ease-out;
+  margin-top: 0px;
+}
+body .members #profile .profile-slider .p-info {
+  background: #fff;
+  padding: 15px;
+  text-align: center;
+  width: auto;
+  height: 220px;
+}
+body .members #profile .profile-slider .p-info p {
+  font-family: montserrat;
+  color: #000;
+  font-size: 1rem;
+}
+body .members #profile .profile-slider .p-info a {
+  background: #F5D8F5;
+  color: #000;
+  font-family: montserrat;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+}
+body .album {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+body .album .main-tracks {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background: #fff;
+  padding: 50px 0px;
+}
+body .album .main-tracks .main-module {
+  display: flex;
+  flex-direction: column;
+}
+body .album .main-tracks .main-module .main-bg {
+  width: 400px;
+  height: 360px;
+  background: url(https://placehold.co/400x360.png);
+  border: 1px solid #C1AED7;
+}
+body .album .main-tracks .main-module .main-bg .main-color {
+  background: rgba(228, 202, 255, 0.6);
+  width: 100%;
+  height: 100%;
+}
+body .album .main-tracks .main-module .main-title {
+  width: 400px;
+  height: 90px;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #C1AED7;
+  border-top: 0px;
+  display: flex;
+  align-items: center;
+}
+body .album .main-tracks .main-module .main-title span {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  color: var(--violet-k);
+  paint-order: stroke fill;
+  -webkit-text-stroke: 2px #fff;
+  font-weight: 600;
+  font-size: 3rem;
+  padding: 15px;
+  padding-left: 50px;
+  position: absolute;
+  z-index: 4;
+}
+body .album .main-tracks .main-module .main-title i {
+  font-size: 6.2rem;
+  color: rgb(193, 159, 230);
+  position: relative;
+  left: -37.5rem;
+  top: 0rem;
+  z-index: 2;
+}
+body .album .main-tracks .main-module .main-title .main-2 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: 3;
+  left: -12rem;
+  transition: 0.4s ease-out;
+}
+body .album .main-tracks .main-module .main-title .main-2:hover {
+  left: -3.5rem;
+  transition: 0.4s ease-in;
+}
+body .album .main-tracks .main-module .main-title .main-2 .main-barre {
+  background: rgba(233, 213, 255, 0.8);
+  width: 450px;
+  height: 90px;
+}
+body .album .main-tracks .main-module .main-title .main-2 .main-split {
+  width: 0px;
+  height: 0px;
+  border-left: 60px solid rgba(233, 213, 255, 0.8);
+  border-bottom: 90px solid transparent;
+}
+body .album .second-tracks {
+  background: #F7EBF7;
+  padding: 50px 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+body .album .second-tracks .list {
+  width: 62%;
+  background: #fff;
+  border: 1px solid #C1AED7;
+  border-bottom: 0px;
+}
+body .album .second-tracks .list .title {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex: row;
+  overflow: hidden;
+  align-items: center;
+  border-bottom: 1px solid #C1AED7;
+}
+body .album .second-tracks .list .title i {
+  color: rgba(193, 159, 230, 0.5);
+  font-size: 5.3rem;
+  position: relative;
+  top: 0.3rem;
+  z-index: 1;
+}
+body .album .second-tracks .list .title p {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+body .album .second-tracks .list .title p span {
+  font-family: "Playfair Display", serif;
+  font-size: 2.3rem;
+  color: var(--violet-k);
+  padding: 15px;
+  font-weight: 600;
+  line-height: 100%;
+  paint-order: stroke fill;
+  -webkit-text-stroke: 3px #fff;
+  position: relative;
+  left: -1.8rem;
+  top: 0.5rem;
+  z-index: 3;
+}
+body .album .second-tracks .title-tracks {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+body .album .second-tracks .title-tracks .mv {
+  display: flex;
+  flex-direction: column;
+}
+body .album .second-tracks .title-tracks .mv .mv-img {
+  width: 100%;
+  background: url(https://placehold.co/440x200.png);
+  height: 150px;
+}
+body .album .second-tracks .title-tracks .mv .mv-title {
+  padding: 20px;
+  font-family: montserrat;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #fff;
+  background: var(--violet-k);
+  text-transform: uppercase;
+  line-height: 100%;
+}
+body .last {
+  background: url(../img/scene/group2.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}/*# sourceMappingURL=style.css.map */
