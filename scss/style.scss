@@ -11,13 +11,13 @@ body {
     .navbar {
         background-color: #fff;
         border-bottom: 1px solid #A97DDB;
-        position:fixed;
-        width:100%;
-        z-index:99;
+        position: fixed;
+        width: 100%;
+        z-index: 99;
 
         img {
             width: 20%;
-            padding:15px;
+            padding: 15px;
         }
 
         a {
@@ -72,6 +72,7 @@ body {
         background-size: cover;
         background-position: center;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         border-top: 1px solid #C1AED7;
@@ -85,6 +86,13 @@ body {
             font-style: italic;
             color: var(--violet-k);
         }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: #D0AFF6;
+        }
     }
 
     .members {
@@ -97,7 +105,7 @@ body {
         align-items: center;
         gap: 0;
 
-        #profile {
+        .profile {
             flex: 1;
             background: url(https://placehold.co/200x460.png);
             background-size: cover;
@@ -180,6 +188,8 @@ body {
         padding: 0px;
         margin: 0px;
 
+        /***3 TRACKS HIGHLIGHT***/
+
         .main-tracks {
             width: 100%;
             display: flex;
@@ -203,6 +213,41 @@ body {
                         background: rgba(228, 202, 255, 0.6);
                         width: 100%;
                         height: 100%;
+
+                        .main-watch {
+                            text-align: center;
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            opacity: 0;
+                            transition: 0.5s;
+
+                            &:hover {
+                                opacity: 1;
+                                transition: 0.5s;
+                            }
+
+                            a {
+                                text-decoration: none;
+                                color: #fff;
+
+                                span {
+                                    font-family: montserrat;
+                                    font-weight: 600;
+                                    color: #fff;
+                                    text-transform: uppercase;
+                                    font-size: 1.2rem;
+                                }
+
+                                i {
+                                    color: #fff;
+                                    font-size: 3rem;
+                                }
+                            }
+                        }
                     }
                 }
 
@@ -269,6 +314,8 @@ body {
             }
         }
 
+        /***LISTE CHANSON ALBUM***/
+
         .second-tracks {
             background: #F7EBF7;
             padding: 50px 30px;
@@ -276,7 +323,7 @@ body {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            gap:3rem;
+            gap: 3rem;
             justify-content: center;
 
             .list {
@@ -289,7 +336,7 @@ body {
                     width: 100%;
                     height: 60px;
                     display: flex;
-                    flex: row;
+                    flex-direction: row;
                     overflow: hidden;
                     align-items: center;
                     border-bottom: 1px solid #C1AED7;
@@ -303,55 +350,80 @@ body {
                     }
 
                     p {
-                        font-family: 'Playfair Display', serif;
+                        font-family: montserrat;
                         font-weight: 400;
-                        font-size:1.2rem;
+                        font-size: 1rem;
                         text-transform: uppercase;
+                        float: right;
+                        position: relative;
+                        top: 0.5rem;
+                    }
 
-                        span {
-                            font-family: 'Playfair Display', serif;
-                            font-size: 2.3rem;
-                            color: var(--violet-k);
-                            padding: 15px;
-                            font-weight: 600;
-                            line-height: 100%;
-                            paint-order: stroke fill;
-                            -webkit-text-stroke: 3px #fff;
-                            position: relative;
-                            left: -1.8rem;
-                            top:0.5rem;
-                            z-index: 3;
-                        }
+                    b {
+                        font-family: 'Playfair Display', serif;
+                        font-weight: 600;
+                        font-style: italic;
+                        font-size: 1.2rem;
+                        padding: 0px 15px;
+                        text-transform: uppercase;
+                        color: #D0AFF6;
+                    }
+
+                    span {
+                        font-family: 'Playfair Display', serif;
+                        font-size: 2.3rem;
+                        color: var(--violet-k);
+                        padding: 15px;
+                        font-weight: 600;
+                        line-height: 100%;
+                        paint-order: stroke fill;
+                        -webkit-text-stroke: 3px #fff;
+                        position: relative;
+                        left: -1.8rem;
+                        top: 0rem;
+                        z-index: 3;
+                        width: 650px;
                     }
                 }
             }
+
+            /***TITLE TRACKS JP***/
 
             .title-tracks {
                 display: flex;
                 flex-direction: column;
                 width: 30%;
                 justify-content: flex-start;
-                gap:1rem;
+                gap: 1rem;
 
                 .mv {
                     display: flex;
                     flex-direction: column;
 
                     .mv-img {
-                        width:100%;
-                        background:url(https://placehold.co/440x200.png);
-                        height:150px;
+                        width: 100%;
+                        background: url(https://placehold.co/440x200.png);
+                        height: 150px;
                     }
 
                     .mv-title {
-                        padding:20px;
+                        padding: 20px;
                         font-family: montserrat;
-                        font-weight:600;
+                        font-weight: 600;
                         font-size: 1.2rem;
-                        color:#fff;
-                        background:var(--violet-k);
-                        text-transform:uppercase;
+                        color: #fff;
+                        background: var(--violet-k);
+                        text-transform: uppercase;
                         line-height: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        a {
+                            color: #fff;
+                            text-decoration: none;
+                            font-size: 0.8rem;
+                        }
                     }
                 }
             }
@@ -361,10 +433,414 @@ body {
     /*********SECTION FIN*********/
 
     .last {
-        background:url(../img/scene/group2.jpg);
-        background-size:cover;
+        background: url(../img/scene/group2.jpg);
+        background-size: cover;
         background-position: center;
-        width:100%; 
-        height:100vh;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .contact {
+        background: #F7EBF7;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .sub-title {
+            width:70%;
+            padding:50px 0px 30px 0px;
+
+            .sub-line {
+                border: 1px solid #fff;
+                width: 100%;
+                position:relative;
+                z-index:1;
+                top:3rem;
+            }
+
+            h3 {
+                font-family:'Playfair Display', serif;
+                font-weight:800;
+                color:#fff;
+                font-size:4.3rem;
+                position:relative;
+                z-index:2;
+                paint-order: stroke fill;
+                -webkit-text-stroke: 3px #D0AFF6;
+            }
+        }
+
+        .kep1er-about {
+            display:flex;
+            flex-direction: row;
+            width:70%;
+            background:#fff;
+            border: 1px solid #C1AED7;
+            margin:0px 0px 50px 0px;
+
+            .kep1er-desc {
+                background:#fff;
+                border-right:1px solid #C1AED7;
+                height:150px;
+                overflow:hidden;
+
+                p {
+                    padding:20px;
+                    font-family: montserrat;
+                    font-size:1rem;
+                    text-align: justify;
+                    color:#000;
+                }
+
+            }
+
+            .project, .group, .k-profile {
+                background:#fff;
+                border-right:1px solid #C1AED7;
+                height:150px;
+                overflow:hidden;
+                display: flex;
+                flex-direction: column;
+                text-align:left;
+
+                i {
+                    color:rgba(193, 159, 230, 0.5);
+                    font-size:9rem;
+                    position:relative;
+                    z-index:1;
+                    left:-1rem;
+                    top:-1rem;
+                }
+
+                a {
+                    position:relative;
+                    z-index:2;
+                    color:#000;
+                    text-decoration: none;
+                    font-weight: bold;
+                    font-family: montserrat;
+                    paint-order: stroke fill;
+                    -webkit-text-stroke: 3px #fff;
+                    font-size:1rem;
+                    text-transform: uppercase;
+                    top:-2rem;
+                    left:1rem;
+                }
+            }
+
+        }
+
+        .kep1er-tab {
+            width:100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: stretch;
+
+            .kep1er-socials {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                padding-bottom:80px;
+
+                .top {
+                    display: flex;
+                    flex-direction: row;
+                    border: 1px solid #C1AED7;
+                    border-bottom: 0px;
+
+                    .youtube {
+                        background: #fff;
+                        border-right: 1px solid #C1AED7;
+                        padding: 30px;
+                        height: 80px;
+                        overflow: hidden;
+
+                        a {
+                            color: var(--violet-k);
+                            font-family: 'Playfair Display', serif;
+                            font-weight: 800;
+                            font-size: 1.4rem;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            position: relative;
+                            z-index: 4;
+                            top: -0.4rem;
+                            paint-order: stroke fill;
+                            -webkit-text-stroke: 3px #fff;
+                        }
+
+                        i {
+                            position: relative;
+                            color: rgba(193, 159, 230, 0.5);
+                            font-size: 6rem;
+                            z-index: 1;
+                            top: -3.2rem;
+                            left: 4.2rem;
+                        }
+                    }
+
+                    .social-title {
+                        background: #fff;
+                        padding: 30px;
+                        height: 80px;
+                        overflow: hidden;
+
+                        span {
+                            white-space: nowrap;
+                            font-style: italic;
+                            color: #D0AFF6;
+                            font-family: 'Playfair Display', serif;
+                            font-weight: 600;
+                            font-size: 5.7rem;
+                            top: -3.8rem;
+                            left: -3.5rem;
+                            position: relative;
+                            letter-spacing: -5px;
+
+                        }
+                    }
+
+                }
+
+                .bottom {
+                    display: flex;
+                    flex-direction: row;
+                    border: 1px solid #C1AED7;
+
+                    .insta {
+                        border-right: 1px solid #C1AED7;
+                        background: #fff;
+                        flex: 1;
+                        padding: 20px;
+                        height: 70px;
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        a {
+                            color: var(--violet-k);
+                            font-family: 'Playfair Display', serif;
+                            font-weight: 600;
+                            font-size: 1.2rem;
+                            text-decoration: none;
+                            position: relative;
+                            z-index: 3;
+                        }
+
+                        i {
+                            position: relative;
+                            color: rgba(193, 159, 230, 0.5);
+                            font-size: 3.5rem;
+                            z-index: 1;
+                            z-index: 1;
+                            top: -0.8rem;
+                        }
+                    }
+
+                    .twitter {
+                        border-right: 1px solid #C1AED7;
+                        background: #fff;
+                        flex: 1;
+                        padding: 20px;
+                        height: 70px;
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        a {
+                            color: var(--violet-k);
+                            font-family: 'Playfair Display', serif;
+                            font-weight: 600;
+                            font-size: 1.2rem;
+                            text-decoration: none;
+                            position: relative;
+                            z-index: 3;
+                        }
+
+                        i {
+                            position: relative;
+                            color: rgba(193, 159, 230, 0.5);
+                            font-size: 4.8rem;
+                            z-index: 1;
+                            z-index: 1;
+                            top: -1.4rem;
+                        }
+                    }
+
+                    .jp {
+                        background: #fff;
+                        flex: 1;
+                        padding: 20px;
+                        height: 70px;
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        a {
+                            color: var(--violet-k);
+                            font-family: 'Playfair Display', serif;
+                            font-weight: 600;
+                            font-size: 1.2rem;
+                            text-decoration: none;
+                            position: relative;
+                            z-index: 3;
+                        }
+
+                        i {
+                            position: relative;
+                            color: rgba(193, 159, 230, 0.5);
+                            font-size: 4.5rem;
+                            z-index: 1;
+                            z-index: 1;
+                            top: -1.3rem;
+                        }
+                    }
+
+                }
+            }
+
+
+            .icon-socials {
+                border: 1px solid #C1AED7;
+                border-left: 0px;
+                width: 20%;
+                background: #fff;
+                height: 9.5rem;
+                overflow: hidden;
+
+                i {
+                    position: relative;
+                    z-index: 1;
+                    font-size: 8rem;
+                    color: #E5CEFF;
+                    top: -6rem;
+                    left: 11.2rem;
+                }
+
+                a {
+                    color: var(--violet-k);
+                    text-decoration: none;
+                    font-family: montserrat;
+                    font-weight: 800;
+                    paint-order: stroke fill;
+                    -webkit-text-stroke: 3px #fff;
+                    font-size: 1rem;
+                    padding: 20px;
+                    top: 1rem;
+                    position: relative;
+                    z-index: 3;
+                    line-height: 1rem;
+                }
+
+                p {
+                    font-family: montserrat;
+                    font-size: 0.7rem;
+                    color:#000;
+                    text-transform: uppercase;
+                    position: relative;
+                    z-index: 2;
+                    padding: 20px;
+                }
+            }
+
+        }
+
+        .contact-form {
+            background:#fff;
+            border: 1px solid #C1AED7;
+            width:70%;
+            margin: 0px 0px 80px 0px;
+
+            .contact-both {
+                display:flex;
+                flex-direction: row;
+                width:100%;
+                justify-content: space-between;
+                align-items: flex-start;
+                gap:2rem;
+
+                .form {
+                    display:flex;
+                    flex-direction: column;
+                    padding:20px;
+                }
+
+                .contact-link {
+                    display:flex;
+                    flex-direction: row;
+                    gap:1.5rem;
+                    padding:15px;
+
+                    .links {
+                        display: flex;
+                        flex-direction: column;
+                        text-align:left;
+
+                        b {
+                            font-family: montserrat;
+                            text-transform: uppercase;
+                            color:#000;
+                            font-size:1rem;
+                        }
+
+                        a {
+                            color:var(--violet-k);
+                            text-decoration: none;
+                            font-size:1rem;
+                            font-family: montserrat;
+                            font-weight: 500;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    /*********FOOTER*********/
+
+    footer {
+        background: #fff;
+        border-top: 1px solid #A97DDB;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10px;
+
+        p {
+            font-family: montserrat;
+            font-size: 1rem;
+            color: var(--violet-k);
+            text-transform: uppercase;
+            font-weight: 400;
+            padding: 0px 20px;
+        }
+
+        a {
+            color: var(--violet-k);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        span {
+            font-family: montserrat;
+            font-size: 1rem;
+            color: var(--violet-k);
+            text-transform: uppercase;
+            font-weight: 400;
+            padding: 0px 20px;
+        }
     }
 }
