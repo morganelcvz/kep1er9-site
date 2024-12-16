@@ -11,6 +11,8 @@ body {
   /*********SECTION CHANSONS*********/
   /*********SECTION FIN*********/
   /*********FOOTER*********/
+  /************PAGE MEMBRES/PROJET************/
+  /***SECTION ONGLETS PROFILS***/
 }
 body .navbar {
   background-color: #fff;
@@ -432,7 +434,9 @@ body .contact .kep1er-about .kep1er-desc p {
   text-align: justify;
   color: #000;
 }
-body .contact .kep1er-about .project, body .contact .kep1er-about .group, body .contact .kep1er-about .k-profile {
+body .contact .kep1er-about .project,
+body .contact .kep1er-about .group,
+body .contact .kep1er-about .k-profile {
   background: #fff;
   border-right: 1px solid #C1AED7;
   height: 150px;
@@ -441,7 +445,9 @@ body .contact .kep1er-about .project, body .contact .kep1er-about .group, body .
   flex-direction: column;
   text-align: left;
 }
-body .contact .kep1er-about .project i, body .contact .kep1er-about .group i, body .contact .kep1er-about .k-profile i {
+body .contact .kep1er-about .project i,
+body .contact .kep1er-about .group i,
+body .contact .kep1er-about .k-profile i {
   color: rgba(193, 159, 230, 0.5);
   font-size: 9rem;
   position: relative;
@@ -449,7 +455,9 @@ body .contact .kep1er-about .project i, body .contact .kep1er-about .group i, bo
   left: -1rem;
   top: -1rem;
 }
-body .contact .kep1er-about .project a, body .contact .kep1er-about .group a, body .contact .kep1er-about .k-profile a {
+body .contact .kep1er-about .project a,
+body .contact .kep1er-about .group a,
+body .contact .kep1er-about .k-profile a {
   position: relative;
   z-index: 2;
   color: #000;
@@ -728,4 +736,226 @@ body footer span {
   text-transform: uppercase;
   font-weight: 400;
   padding: 0px 20px;
+}
+body .space {
+  width: 100%;
+  height: 5rem;
+}
+body .profils {
+  /***CONTENU DES ONGLETS***/
+}
+body .profils .nav-tabs {
+  border: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+body .profils .nav-tabs .nav-link {
+  border: 0px;
+}
+body .profils .nav-tabs .nav-link i {
+  font-size: 2rem;
+  padding: 20px 0px;
+}
+body .profils .tab-content .tab-pane .k-profile {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-bottom: 1px solid #C1AED7;
+}
+body .profils .tab-content .tab-pane .k-profile .profile-info {
+  background: #ECDCFF;
+  border-right: 1px solid #C1AED7;
+  width: 40%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /*****TITRE NOM PROFIL*****/
+}
+body .profils .tab-content .tab-pane .k-profile .profile-info .p-top {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  padding: 40px 0px;
+}
+body .profils .tab-content .tab-pane .k-profile .profile-info .p-top .p-star {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border: 1px solid #C1AED7;
+  background: #fff;
+  overflow: hidden;
+}
+body .profils .tab-content .tab-pane .k-profile .profile-info .p-top .p-star i {
+  color: rgba(193, 159, 230, 0.5);
+  font-size: 4.5rem;
+  position: relative;
+  top: -0.5rem;
+  left: -0.6rem;
+}
+body .profils .tab-content .tab-pane .k-profile .profile-info .p-top .p-title {
+  height: 60px;
+  width: 70%;
+  background: #fff;
+  border: 1px solid #C1AED7;
+  border-left: 0px;
+  overflow: hidden;
+}
+body .profils .tab-content .tab-pane .k-profile .profile-info .p-top .p-title h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  color: var(--violet-k);
+  font-weight: 600;
+  font-style: italic;
+  padding: 0px 20px;
+}
+body .profils .tab-content .tab-pane .k-profile .profile-info .p-middle {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+body .profils .tab-content .tab-pane .k-profile .profile-info .p-middle .p-tbl {
+  display: flex;
+  flex-direction: row;
+}
+body .profils .tab-content .tab-pane .k-profile .profile-info .p-middle .p-tbl .middle-2 {
+  display: flex;
+  flex-direction: column;
+}
+body .profils .tab-content .tab-pane .k-profile .profile-info .p-middle .p-tbl .middle-2 .p-question {
+  display: flex;
+  flex-direction: row;
+}
+body .profils .tab-content .tab-pane .k-profile .profile-info .p-middle .p-tbl .middle-2 .p-question .p-label {
+  background: #fff;
+  border: 1px solid #C1AED7;
+  border-right: 0px;
+  border-bottom: 0px;
+  width: 150px;
+  padding: 15px;
+  font-family: montserrat;
+  font-weight: 800;
+  color: #000;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+body .profils .tab-content .tab-pane .k-profile .profile-info .p-middle .p-tbl .middle-2 .p-question .p-info {
+  background: #fff;
+  border: 1px solid #C1AED7;
+  border-right: 0px;
+  border-bottom: 0px;
+  width: 230px;
+  padding: 15px;
+  font-family: montserrat;
+  font-weight: 400;
+  color: #000;
+  font-size: 1rem;
+  line-height: 100%;
+}
+body .profils .tab-content .tab-pane .k-profile .profile-info .p-middle .p-tbl .p-box {
+  background: #fff;
+  border: 1px solid #C1AED7;
+  border-bottom: 0px;
+  width: 105px;
+}
+body .profils .tab-content .tab-pane .k-profile .profile-info .p-middle .p-tbl .p-box .box-bg {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 2.1rem;
+}
+body .profils .tab-content .tab-pane .k-profile .profile-info .p-middle .p-tbl .p-box .box-bg .bg-tr {
+  width: 0px;
+  height: 0px;
+  border-bottom: 30px solid rgba(169, 125, 219, 0.8);
+  border-right: 102px solid transparent;
+}
+body .profils .tab-content .tab-pane .k-profile .profile-info .p-middle .p-tbl .p-box .box-bg .bg-bloc {
+  background: rgba(169, 125, 219, 0.8);
+  padding: 20px;
+  width: 100%;
+  height: 170px;
+  display: flex;
+  align-items: flex-end;
+}
+body .profils .tab-content .tab-pane .k-profile .profile-info .p-middle .p-tbl .p-box .box-bg .bg-bloc span {
+  background: #fff;
+  padding: 10px;
+  text-align: center;
+  height: 70px;
+}
+body .profils .tab-content .tab-pane .k-profile .profile-info .p-middle .p-tbl .p-box .box-bg .bg-bloc span a {
+  font-weight: 600;
+  font-family: montserrat;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #000;
+  line-height: 100%;
+}
+body .profils .tab-content .tab-pane .k-profile .profile-info .p-middle .p-position {
+  display: flex;
+  flex-direction: row;
+}
+body .profils .tab-content .tab-pane .k-profile .profile-info .p-middle .p-position .label {
+  background: #fff;
+  border: 1px solid #C1AED7;
+  border-right: 0px;
+  width: 150px;
+  padding: 15px;
+  font-family: montserrat;
+  font-weight: 800;
+  color: #000;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+body .profils .tab-content .tab-pane .k-profile .profile-info .p-middle .p-position .info {
+  background: #fff;
+  border: 1px solid #C1AED7;
+  width: 335px;
+  padding: 15px;
+  font-family: montserrat;
+  font-weight: 400;
+  color: #000;
+  font-size: 1rem;
+  line-height: 100%;
+}
+body .profils .tab-content .tab-pane .k-profile .profile-info .p-end {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px;
+}
+body .profils .tab-content .tab-pane .k-profile .profile-info .p-end .p-bio {
+  background: #fff;
+  border: 1px solid #C1AED7;
+  width: 80%;
+  height: 280px;
+}
+body .profils .tab-content .tab-pane .k-profile .profile-info .p-end .p-bio span {
+  font-family: montserrat;
+  color: #000;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+body .profils .tab-content .tab-pane .k-profile .profile-info .p-end .p-bio p {
+  font-family: montserrat;
+  font-size: 0.9rem;
+  text-align: justify;
+  color: #000;
+  padding: 20px;
+}
+body .profils .tab-content .tab-pane .k-profile .profile-img {
+  background: url(https://placehold.co/200x460.png);
+  height: 800px;
+  width: 60%;
 }/*# sourceMappingURL=style.css.map */
