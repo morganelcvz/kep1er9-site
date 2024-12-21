@@ -11,8 +11,9 @@ body {
   /*********SECTION CHANSONS*********/
   /*********SECTION FIN*********/
   /*********FOOTER*********/
-  /************PAGE MEMBRES/PROJET************/
+  /************PAGE MEMBRES************/
   /***SECTION ONGLETS PROFILS***/
+  /************PAGE PROJET************/
 }
 body .navbar {
   background-color: #fff;
@@ -114,12 +115,12 @@ body .members .profile {
 }
 body .members .profile .profile-slider {
   margin-top: 30rem;
-  transition: 0.7s ease-out;
+  transition: 0.5s ease-out;
   width: 100%;
 }
 body .members .profile .profile-slider:hover {
   margin-top: 10rem;
-  transition: 0.7s ease-in;
+  transition: 0.5s ease-in;
 }
 body .members .profile .profile-slider .p-trs {
   width: 0px;
@@ -278,7 +279,7 @@ body .album .main-tracks .main-module .main-title .main-2 .main-split {
   border-bottom: 90px solid transparent;
 }
 body .album .second-tracks {
-  background: #F7EBF7;
+  background: #ECDCFF;
   padding: 50px 30px;
   width: 100%;
   display: flex;
@@ -385,7 +386,7 @@ body .last {
   height: 100vh;
 }
 body .contact {
-  background: #F7EBF7;
+  background: #ECDCFF;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -759,6 +760,28 @@ body .profils .nav-tabs .nav-link i {
   font-size: 2rem;
   padding: 20px 0px;
 }
+body .profils .nav-tabs #yujin-tab,
+body .profils .nav-tabs #xiaoting-tab,
+body .profils .nav-tabs #mashiro-tab,
+body .profils .nav-tabs #chaehyun-tab,
+body .profils .nav-tabs #dayeon-tab,
+body .profils .nav-tabs #hikaru-tab,
+body .profils .nav-tabs #hiyyih-tab,
+body .profils .nav-tabs #youngeun-tab,
+body .profils .nav-tabs #yeseo-tab {
+  color: #e0cff2;
+}
+body .profils .nav-tabs #yujin-tab.active,
+body .profils .nav-tabs #xiaoting-tab.active,
+body .profils .nav-tabs #mashiro-tab.active,
+body .profils .nav-tabs #chaehyun-tab.active,
+body .profils .nav-tabs #dayeon-tab.active,
+body .profils .nav-tabs #hikaru-tab.active,
+body .profils .nav-tabs #hiyyih-tab.active,
+body .profils .nav-tabs #youngeun-tab.active,
+body .profils .nav-tabs #yeseo-tab.active {
+  color: var(--violet-k);
+}
 body .profils .tab-content .tab-pane .k-profile {
   display: flex;
   flex-direction: row;
@@ -958,4 +981,138 @@ body .profils .tab-content .tab-pane .k-profile .profile-img {
   background: url(https://placehold.co/200x460.png);
   height: 800px;
   width: 60%;
+}
+body .project-cover {
+  width: 100%;
+  height: 100vh;
+  background: url(/img/project_light.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .project-txt {
+  background: #ECDCFF;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .project-txt .sub-title {
+  width: 70%;
+  padding: 50px 0px 30px 0px;
+}
+body .project-txt .sub-title .sub-line {
+  border: 1px solid #fff;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  top: 3rem;
+}
+body .project-txt .sub-title h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  color: #fff;
+  font-size: 4.3rem;
+  position: relative;
+  z-index: 2;
+  paint-order: stroke fill;
+  -webkit-text-stroke: 3px #D0AFF6;
+}
+body .project-txt .project-gp9 {
+  width: 70%;
+  background: #fff;
+  border: 1px solid #C1AED7;
+}
+body .project-txt .project-gp9 p {
+  padding: 20px;
+  font-size: 1rem;
+  color: #000;
+  text-align: justify;
+  font-family: montserrat;
+}
+body .project-txt .project-kep1er {
+  width: 70%;
+  background: #fff;
+  border: 1px solid #C1AED7;
+  margin-bottom: 60px;
+}
+body .project-txt .project-kep1er p {
+  padding: 20px;
+  font-size: 1rem;
+  color: #000;
+  text-align: justify;
+  font-family: montserrat;
+}
+body .project-txt .project-on {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .project-txt .project-on .official-website {
+  background: #fff;
+  border: 1px solid #C1AED7;
+  border-top: 0px;
+}
+body .project-txt .project-on .official-credit {
+  background: #fff;
+  border: 1px solid #C1AED7;
+  border-top: 0px;
+  font-family: montserrat;
+  font-size: 0.9rem;
+}
+body .project-txt .credit-tab {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+body .project-txt .credit-tab .credit-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+}
+body .project-txt .credit-tab .credit-top .credit-design {
+  background: #fff;
+  border: 1px solid #C1AED7;
+  border-right: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+body .project-txt .credit-tab .credit-top .credit-design p {
+  padding: 20px;
+  font-family: montserrat;
+  font-size: 1rem;
+  color: #000;
+}
+body .project-txt .credit-tab .credit-top .credit-info {
+  background: #fff;
+  border: 1px solid #C1AED7;
+}
+body .project-txt .credit-tab .credit-top .credit-info p {
+  padding: 20px;
+  font-family: montserrat;
+  font-size: 1rem;
+  color: #000;
+}
+body .project-txt .credit-tab .credit-other {
+  background: #fff;
+  border: 1px solid #C1AED7;
+  border-top: 0px;
+}
+body .project-txt .credit-tab .credit-other p {
+  padding: 20px;
+  font-family: montserrat;
+  font-size: 1rem;
+  color: #000;
 }/*# sourceMappingURL=style.css.map */
