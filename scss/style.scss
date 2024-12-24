@@ -1,5 +1,79 @@
 :root {
+
+}
+
+[data-theme="light"] {
+    --color-bg: #ffffff;
+    --color-text:#000;
     --violet-k: #A97DDB;
+    --bg-title-tracks: #fff;
+    --bg-section: #ECDCFF;
+    --bg-tracks:#fff;
+    --bg-profile:#ECDCFF;
+
+    --img-header:url(../img/scene/group1.jpg);
+    --img-footer:url(../img/scene/group2.jpg);
+    --img-cover:url(../img/project_light.jpg);
+
+    --img-yujin-small:url(../img/scene/yujin1.jpg);
+    --img-xiaoting-small:url(../img/scene/xiaoting1.jpg);
+    --img-mashiro-small:url(../img/scene/mashiro1.jpg);
+    --img-chaehyun-small:url(../img/scene/chae1.jpg);
+    --img-dayeon-small:url(../img/scene/dayeon1.jpg);
+    --img-hikaru-small:url(/img/scene/hikaru1.jpg);
+    --img-hiyyih-small:url(../img/scene/hiyyih1.jpg);
+    --img-youngeun-small:url(../img/scene/youngeun1.jpg);
+    --img-yeseo-small:url(../img/scene/yeseo1.jpg);
+
+    --img-yujin-profile:url(../img/scene/yujin2.jpg);
+    --img-xiaoting-profile:url(../img/scene/xiaoting2.jpg);
+    --img-mashiro-profile:url(../img/scene/mashiro2.jpg);
+    --img-chaehyun-profile:url(../img/scene/chae2.jpg);
+    --img-dayeon-profile:url(../img/scene/dayeon2.jpg);
+    --img-hikaru-profile:url(../img/scene/hikaru2.jpg);
+    --img-hiyyih-profile:url(../img/scene/hiyyih2.jpg);
+    --img-youngeun-profile:url(../img/scene/youngeun2.jpg); 
+    --img-yeseo-profile:url(../img/scene/yeseo2.jpg);
+
+    --profile-position:center;
+    --hiyyih-position:right;
+}
+
+[data-theme="dark"] {
+    --color-bg:#221B2F;
+    --color-text:#fff;
+    --violet-k: #A97DDB;
+    --bg-title-tracks: #594875;
+    --bg-section: #28273B;
+    --bg-tracks:#C9A9ED;
+    --bg-profile:#56467E;
+
+    --img-header:url(../img/nous/group1.jpg);
+    --img-footer:url(../img/nous/group2.jpg);
+    --img-cover:url(../img/project_dark.jpg);
+
+    --img-yujin-small:url(../img/nous/yujin1.jpg);
+    --img-xiaoting-small:url(../img/nous/xiaoting1.jpg);
+    --img-mashiro-small:url(../img/nous/mashiro1.jpg);
+    --img-chaehyun-small:url(../img/nous/chae1.jpg);
+    --img-dayeon-small:url(../img/nous/dayeon1.jpg);
+    --img-hikaru-small:url(/img/nous/hikaru1.jpg);
+    --img-hiyyih-small:url(../img/nous/hiyyih1.jpg);
+    --img-youngeun-small:url(../img/nous/youngeun1.jpg);
+    --img-yeseo-small:url(../img/nous/yeseo1.jpg);
+
+    --img-yujin-profile:url(../img/nous/yujin2.jpg);
+    --img-xiaoting-profile:url(../img/nous/xiaoting2.jpg);
+    --img-mashiro-profile:url(../img/nous/mashiro2.jpg);
+    --img-chaehyun-profile:url(../img/nous/chae2.jpg);
+    --img-dayeon-profile:url(../img/nous/dayeon2.jpg);
+    --img-hikaru-profile:url(../img/nous/hikaru2.jpg);
+    --img-hiyyih-profile:url(../img/nous/hiyyih2.jpg);
+    --img-youngeun-profile:url(../img/nous/youngeun2.jpg); 
+    --img-yeseo-profile:url(../img/nous/yeseo2.jpg);
+
+    --profile-position:top;
+    --hiyyih-position:center;
 }
 
 body {
@@ -9,15 +83,25 @@ body {
     /*********Barre de Navigation*********/
 
     .navbar {
-        background-color: #fff;
+        background-color:var(--color-bg);
         border-bottom: 1px solid #A97DDB;
         position: fixed;
         width: 100%;
         z-index: 99;
 
-        img {
-            width: 20%;
-            padding: 15px;
+        .nav-first {
+
+            img {
+                width: 20%;
+                padding: 15px;
+            }
+
+            button {
+                background:var(--color-bg); 
+                border:0px;
+                font-size:2rem;
+                color:var(--violet-k);
+            }
         }
 
         a {
@@ -36,7 +120,7 @@ body {
     /*********Header*********/
 
     header {
-        background-image: url(../img/scene/group1.jpg);
+        background-image:var(--img-header);
         background-size: cover;
         background-position: center;
         width: 100%;
@@ -153,7 +237,7 @@ body {
                 }
 
                 .p-info {
-                    background: #fff;
+                    background:var(--color-bg);
                     padding: 15px;
                     text-align: center;
                     width: auto;
@@ -161,12 +245,12 @@ body {
 
                     p {
                         font-family: montserrat;
-                        color: #000;
+                        color:var(--color-text);
                         font-size: 1rem;
                     }
 
                     a {
-                        background: #F5D8F5;
+                        background:var(--bg-profile);
                         color: #000;
                         font-family: montserrat;
                         text-decoration: none;
@@ -196,7 +280,7 @@ body {
             flex-direction: row;
             align-items: center;
             justify-content: space-around;
-            background: #fff;
+            background:var(--bg-title-tracks);
             padding: 50px 0px;
 
             .main-module {
@@ -260,6 +344,7 @@ body {
                     border-top: 0px;
                     display: flex;
                     align-items: center;
+                    background:var(--bg-tracks);
 
                     span {
                         text-align: center;
@@ -317,7 +402,7 @@ body {
         /***LISTE CHANSON ALBUM***/
 
         .second-tracks {
-            background: #ECDCFF;
+            background: var(--bg-section);
             padding: 50px 30px;
             width: 100%;
             display: flex;
@@ -433,7 +518,7 @@ body {
     /*********SECTION FIN*********/
 
     .last {
-        background: url(../img/scene/group2.jpg);
+        background:var(--img-footer);
         background-size: cover;
         background-position: center;
         width: 100%;
@@ -441,7 +526,7 @@ body {
     }
 
     .contact {
-        background: #ECDCFF;
+        background:var(--bg-section);
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -451,14 +536,6 @@ body {
         .sub-title {
             width: 70%;
             padding: 50px 0px 30px 0px;
-
-            .sub-line {
-                border: 1px solid #fff;
-                width: 100%;
-                position: relative;
-                z-index: 1;
-                top: 3rem;
-            }
 
             h3 {
                 font-family: 'Playfair Display', serif;
@@ -812,7 +889,7 @@ body {
     /*********FOOTER*********/
 
     footer {
-        background: #fff;
+        background:var(--color-bg);
         border-top: 1px solid #A97DDB;
         width: 100%;
         display: flex;
@@ -1147,20 +1224,20 @@ body {
     /************PAGE PROJET************/
 
     .project-cover {
-            width: 100%;
-            height:100vh;
-            background: url(/img/project_light.jpg);
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+        width: 100%;
+        height: 100vh;
+        background:var(--img-cover);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .project-txt {
-        background:#ECDCFF;
-        width:100%;
+        background: #ECDCFF;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1191,29 +1268,29 @@ body {
         }
 
         .project-gp9 {
-            width:70%;
-            background:#fff;
+            width: 70%;
+            background: #fff;
             border: 1px solid #C1AED7;
 
             p {
-                padding:20px;
-                font-size:1rem;
-                color:#000;
+                padding: 20px;
+                font-size: 1rem;
+                color: #000;
                 text-align: justify;
                 font-family: montserrat;
             }
         }
 
         .project-kep1er {
-            width:70%;
-            background:#fff;
+            width: 70%;
+            background: #fff;
             border: 1px solid #C1AED7;
-            margin-bottom:60px;
+            margin-bottom: 60px;
 
             p {
-                padding:20px;
-                font-size:1rem;
-                color:#000;
+                padding: 20px;
+                font-size: 1rem;
+                color: #000;
                 text-align: justify;
                 font-family: montserrat;
             }
@@ -1221,81 +1298,81 @@ body {
         }
 
         .project-on {
-            width:70%;
+            width: 70%;
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
 
             .official-website {
-                background:#fff;
+                background: #fff;
                 border: 1px solid #C1AED7;
-                border-top:0px;
+                border-top: 0px;
             }
 
             .official-credit {
-                background:#fff;
+                background: #fff;
                 border: 1px solid #C1AED7;
-                border-top:0px;
+                border-top: 0px;
                 font-family: montserrat;
-                font-size:0.9rem;
+                font-size: 0.9rem;
             }
         }
 
         .credit-tab {
-            width:70%;
-            display:flex;
+            width: 70%;
+            display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin-bottom:50px;
+            margin-bottom: 50px;
 
             .credit-top {
-                display:flex;
+                display: flex;
                 flex-direction: row;
                 justify-content: space-around;
                 align-items: stretch;
 
                 .credit-design {
-                    background:#fff;
+                    background: #fff;
                     border: 1px solid #C1AED7;
-                    border-right:0px;
-                    display:flex;
+                    border-right: 0px;
+                    display: flex;
                     flex-direction: row;
                     justify-content: space-around;
                     align-items: center;
 
                     p {
-                        padding:20px;
+                        padding: 20px;
                         font-family: montserrat;
-                        font-size:1rem;
-                        color:#000;
+                        font-size: 1rem;
+                        color: #000;
                     }
                 }
 
                 .credit-info {
-                    background:#fff;
+                    background: #fff;
                     border: 1px solid #C1AED7;
 
                     p {
-                        padding:20px;
+                        padding: 20px;
                         font-family: montserrat;
-                        font-size:1rem;
-                        color:#000;
+                        font-size: 1rem;
+                        color: #000;
                     }
                 }
             }
 
             .credit-other {
-                background:#fff;
+                background: #fff;
                 border: 1px solid #C1AED7;
-                border-top:0px;
-            
+                border-top: 0px;
+
                 p {
-                    padding:20px;
+                    padding: 20px;
                     font-family: montserrat;
-                    font-size:1rem;
-                    color:#000;
+                    font-size: 1rem;
+                    color: #000;
                 }
             }
         }

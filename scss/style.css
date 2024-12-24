@@ -1,5 +1,67 @@
-:root {
+[data-theme=light] {
+  --color-bg: #ffffff;
+  --color-text:#000;
   --violet-k: #A97DDB;
+  --bg-title-tracks: #fff;
+  --bg-section: #ECDCFF;
+  --bg-tracks:#fff;
+  --bg-profile:#ECDCFF;
+  --img-header:url(../img/scene/group1.jpg);
+  --img-footer:url(../img/scene/group2.jpg);
+  --img-cover:url(../img/project_light.jpg);
+  --img-yujin-small:url(../img/scene/yujin1.jpg);
+  --img-xiaoting-small:url(../img/scene/xiaoting1.jpg);
+  --img-mashiro-small:url(../img/scene/mashiro1.jpg);
+  --img-chaehyun-small:url(../img/scene/chae1.jpg);
+  --img-dayeon-small:url(../img/scene/dayeon1.jpg);
+  --img-hikaru-small:url(/img/scene/hikaru1.jpg);
+  --img-hiyyih-small:url(../img/scene/hiyyih1.jpg);
+  --img-youngeun-small:url(../img/scene/youngeun1.jpg);
+  --img-yeseo-small:url(../img/scene/yeseo1.jpg);
+  --img-yujin-profile:url(../img/scene/yujin2.jpg);
+  --img-xiaoting-profile:url(../img/scene/xiaoting2.jpg);
+  --img-mashiro-profile:url(../img/scene/mashiro2.jpg);
+  --img-chaehyun-profile:url(../img/scene/chae2.jpg);
+  --img-dayeon-profile:url(../img/scene/dayeon2.jpg);
+  --img-hikaru-profile:url(../img/scene/hikaru2.jpg);
+  --img-hiyyih-profile:url(../img/scene/hiyyih2.jpg);
+  --img-youngeun-profile:url(../img/scene/youngeun2.jpg);
+  --img-yeseo-profile:url(../img/scene/yeseo2.jpg);
+  --profile-position:center;
+  --hiyyih-position:right;
+}
+
+[data-theme=dark] {
+  --color-bg:#221B2F;
+  --color-text:#fff;
+  --violet-k: #A97DDB;
+  --bg-title-tracks: #594875;
+  --bg-section: #28273B;
+  --bg-tracks:#C9A9ED;
+  --bg-profile:#56467E;
+  --img-header:url(../img/nous/group1.jpg);
+  --img-footer:url(../img/nous/group2.jpg);
+  --img-cover:url(../img/project_dark.jpg);
+  --img-yujin-small:url(../img/nous/yujin1.jpg);
+  --img-xiaoting-small:url(../img/nous/xiaoting1.jpg);
+  --img-mashiro-small:url(../img/nous/mashiro1.jpg);
+  --img-chaehyun-small:url(../img/nous/chae1.jpg);
+  --img-dayeon-small:url(../img/nous/dayeon1.jpg);
+  --img-hikaru-small:url(/img/nous/hikaru1.jpg);
+  --img-hiyyih-small:url(../img/nous/hiyyih1.jpg);
+  --img-youngeun-small:url(../img/nous/youngeun1.jpg);
+  --img-yeseo-small:url(../img/nous/yeseo1.jpg);
+  --img-yujin-profile:url(../img/nous/yujin2.jpg);
+  --img-xiaoting-profile:url(../img/nous/xiaoting2.jpg);
+  --img-mashiro-profile:url(../img/nous/mashiro2.jpg);
+  --img-chaehyun-profile:url(../img/nous/chae2.jpg);
+  --img-dayeon-profile:url(../img/nous/dayeon2.jpg);
+  --img-hikaru-profile:url(../img/nous/hikaru2.jpg);
+  --img-hiyyih-profile:url(../img/nous/hiyyih2.jpg);
+  --img-youngeun-profile:url(../img/nous/youngeun2.jpg);
+  --img-yeseo-profile:url(../img/nous/yeseo2.jpg);
+  --profile-position:top;
+  --hiyyih-position:center;
 }
 
 body {
@@ -16,15 +78,21 @@ body {
   /************PAGE PROJET************/
 }
 body .navbar {
-  background-color: #fff;
+  background-color: var(--color-bg);
   border-bottom: 1px solid #A97DDB;
   position: fixed;
   width: 100%;
   z-index: 99;
 }
-body .navbar img {
+body .navbar .nav-first img {
   width: 20%;
   padding: 15px;
+}
+body .navbar .nav-first button {
+  background: var(--color-bg);
+  border: 0px;
+  font-size: 2rem;
+  color: var(--violet-k);
 }
 body .navbar a {
   color: var(--violet-k);
@@ -37,7 +105,7 @@ body .navbar a:hover {
   color: var(--violet-k);
 }
 body header {
-  background-image: url(../img/scene/group1.jpg);
+  background-image: var(--img-header);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -141,7 +209,7 @@ body .members .profile .profile-slider .p-bg:hover {
   margin-top: 0px;
 }
 body .members .profile .profile-slider .p-info {
-  background: #fff;
+  background: var(--color-bg);
   padding: 15px;
   text-align: center;
   width: auto;
@@ -149,11 +217,11 @@ body .members .profile .profile-slider .p-info {
 }
 body .members .profile .profile-slider .p-info p {
   font-family: montserrat;
-  color: #000;
+  color: var(--color-text);
   font-size: 1rem;
 }
 body .members .profile .profile-slider .p-info a {
-  background: #F5D8F5;
+  background: var(--bg-profile);
   color: #000;
   font-family: montserrat;
   text-decoration: none;
@@ -176,7 +244,7 @@ body .album .main-tracks {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  background: #fff;
+  background: var(--bg-title-tracks);
   padding: 50px 0px;
 }
 body .album .main-tracks .main-module {
@@ -233,6 +301,7 @@ body .album .main-tracks .main-module .main-title {
   border-top: 0px;
   display: flex;
   align-items: center;
+  background: var(--bg-tracks);
 }
 body .album .main-tracks .main-module .main-title span {
   text-align: center;
@@ -279,7 +348,7 @@ body .album .main-tracks .main-module .main-title .main-2 .main-split {
   border-bottom: 90px solid transparent;
 }
 body .album .second-tracks {
-  background: #ECDCFF;
+  background: var(--bg-section);
   padding: 50px 30px;
   width: 100%;
   display: flex;
@@ -379,14 +448,14 @@ body .album .second-tracks .title-tracks .mv .mv-title a {
   font-size: 0.8rem;
 }
 body .last {
-  background: url(../img/scene/group2.jpg);
+  background: var(--img-footer);
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 100vh;
 }
 body .contact {
-  background: #ECDCFF;
+  background: var(--bg-section);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -396,13 +465,6 @@ body .contact {
 body .contact .sub-title {
   width: 70%;
   padding: 50px 0px 30px 0px;
-}
-body .contact .sub-title .sub-line {
-  border: 1px solid #fff;
-  width: 100%;
-  position: relative;
-  z-index: 1;
-  top: 3rem;
 }
 body .contact .sub-title h3 {
   font-family: "Playfair Display", serif;
@@ -708,7 +770,7 @@ body .contact .contact-form .contact-both .contact-link .links a {
   font-weight: 500;
 }
 body footer {
-  background: #fff;
+  background: var(--color-bg);
   border-top: 1px solid #A97DDB;
   width: 100%;
   display: flex;
@@ -985,7 +1047,7 @@ body .profils .tab-content .tab-pane .k-profile .profile-img {
 body .project-cover {
   width: 100%;
   height: 100vh;
-  background: url(/img/project_light.jpg);
+  background: var(--img-cover);
   background-size: cover;
   background-position: center;
   display: flex;

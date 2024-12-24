@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
@@ -19,7 +19,10 @@
 
 <body>
   <nav id="navbar-example2" class="navbar">
+    <div class="nav-first">
     <a class="navbar-brand" href="index.html"><img src="img/Kep1er_logo.png" alt="Kep1er's Logo"></a>
+    <button type="button" data-theme-toggle aria-label="Change to light theme"><i class="fa-regular fa-moon"></i></button>
+    </div>
     <ul class="nav nav-pills">
       <li class="nav-item">
         <a class="nav-link" href="#scrollspyHeading1">Members</a>
@@ -50,7 +53,7 @@
   </div>
   <section class="members">
     <div class="profile"
-      style="background:url(../img/scene/yujin1.jpg);background-size:cover;background-position: center;"
+      style="background:var(--img-yujin-small);background-size:cover;background-position: center;"
       alt="Choi Yujin">
       <div class="profile-slider">
         <div class="p-trs"></div>
@@ -72,7 +75,7 @@
       </div>
     </div>
     <div class="profile"
-      style="background:url(../img/scene/xiaoting1.jpg);background-size:cover;background-position: center;"
+      style="background:var(--img-xiaoting-small);background-size:cover;background-position: center;"
       alt="Shen Xiaoting">
       <div class="profile-slider">
         <div class="p-trs"></div>
@@ -94,7 +97,7 @@
       </div>
     </div>
     <div class="profile"
-      style="background:url(../img/scene/mashiro1.jpg);background-size:cover;background-position: center;"
+      style="background:var(--img-mashiro-small);background-size:cover;background-position: center;"
       alt="Sakamoto Mashiro">
       <div class="profile-slider">
         <div class="p-trs"></div>
@@ -116,7 +119,7 @@
       </div>
     </div>
     <div class="profile"
-      style="background:url(../img/scene/chae1.jpg);background-size:cover;background-position: center;"
+      style="background:var(--img-chaehyun-small);background-size:cover;background-position: center;"
       alt="Kim Chaehyun">
       <div class="profile-slider">
         <div class="p-trs"></div>
@@ -138,7 +141,7 @@
       </div>
     </div>
     <div class="profile"
-      style="background:url(../img/scene/dayeon1.jpg);background-size:cover;background-position: center;"
+      style="background:var(--img-dayeon-small);background-size:cover;background-position: center;"
       alt="Kim Dayeon">
       <div class="profile-slider">
         <div class="p-trs"></div>
@@ -162,7 +165,7 @@
       </div>
     </div>
     <div class="profile"
-      style="background:url(/img/scene/hikaru1.jpg);background-size:cover;background-position: center;"
+      style="background:var(--img-hikaru-small);background-size:cover;background-position: center;"
       alt="Ezaki Hikaru">
       <div class="profile-slider">
         <div class="p-trs"></div>
@@ -186,7 +189,7 @@
       </div>
     </div>
     <div class="profile"
-      style="background:url(../img/scene/hiyyih1.jpg);background-size:cover;background-position:right;"
+      style="background:var(--img-hiyyih-small);background-size:cover;background-position:var(--hiyyih-position);"
       alt="Huening Bahiyyih">
       <div class="profile-slider">
         <div class="p-trs"></div>
@@ -208,7 +211,7 @@
       </div>
     </div>
     <div class="profile"
-      style="background:url(../img/scene/youngeun1.jpg);background-size:cover;background-position: center;"
+      style="background:var(--img-youngeun-small);background-size:cover;background-position: center;"
       alt="Seo Youngeun">
       <div class="profile-slider">
         <div class="p-trs"></div>
@@ -230,7 +233,7 @@
       </div>
     </div>
     <div class="profile"
-      style="background:url(../img/scene/yeseo1.jpg);background-size:cover;background-position: center;"
+      style="background:var(--img-yeseo-small);background-size:cover;background-position: center;"
       alt="Kang Yeseo">
       <div class="profile-slider">
         <div class="p-trs"></div>
@@ -412,28 +415,27 @@
   </section>
   <section class="contact">
     <div class="sub-title">
-      <div class="sub-line"></div>
       <h3>01. About Kep1er</h3>
     </div>
     <div class="kep1er-about">
       <div class="kep1er-desc col-6">
-        <p><b>Kep1er (케플러)</b> is a 9-member K-pop project girl group formed through the Mnet survival show <b>Girls Planet 999</b>, managed by WAKEONE Entertainment and KLAP Entertainment.</p>
+        <p><b>Kep1er (케플러)</b> is a 9-member K-pop project girl group formed through the Mnet survival show <b>Girls
+            Planet 999</b>, managed by WAKEONE Entertainment and KLAP Entertainment.</p>
       </div>
       <div class="project col-2">
         <i class="cp cp-jupiter-o"></i>
-        <a href="" target="_blank">Learn More</a> 
+        <a href="" target="_blank">Learn More</a>
       </div>
       <div class="group col-2">
         <i class="cp cp-shooting-star-o"></i>
-        <a href="" target="_blank">Group</a> 
+        <a href="" target="_blank">Group</a>
       </div>
       <div class="k-profile col-2" style="border-right:0px;">
         <i class="cp cp-planet-o"></i>
-        <a href="" target="_blank">see Profiles</a> 
+        <a href="" target="_blank">see Profiles</a>
       </div>
     </div>
     <div class="sub-title">
-      <div class="sub-line"></div>
       <h3>02. Find Kep1er</h3>
     </div>
     <div class="kep1er-tab">
@@ -469,7 +471,6 @@
       </div>
     </div>
     <div class="sub-title">
-      <div class="sub-line"></div>
       <h3>03. Contact Kep1er</h3>
     </div>
     <div class="contact-form">
@@ -506,6 +507,7 @@
     <p><a href="">About</a> | <a href="">Privacy policy</a> | <a href="">Terms & Conditions</a></p> <span>© Morgane Le
       Calvez 2024</span>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
