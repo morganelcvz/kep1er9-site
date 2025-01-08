@@ -1,67 +1,101 @@
 [data-theme=light] {
+  /***COULEURS INDEX***/
   --color-bg: #ffffff;
-  --color-text:#000;
+  --color-text: #000;
   --violet-k: #A97DDB;
   --bg-title-tracks: #fff;
   --bg-section: #ECDCFF;
-  --bg-tracks:#fff;
-  --bg-profile:#ECDCFF;
-  --img-header:url(../img/scene/group1.jpg);
-  --img-footer:url(../img/scene/group2.jpg);
-  --img-cover:url(../img/project_light.jpg);
-  --img-yujin-small:url(../img/scene/yujin1.jpg);
-  --img-xiaoting-small:url(../img/scene/xiaoting1.jpg);
-  --img-mashiro-small:url(../img/scene/mashiro1.jpg);
-  --img-chaehyun-small:url(../img/scene/chae1.jpg);
-  --img-dayeon-small:url(../img/scene/dayeon1.jpg);
-  --img-hikaru-small:url(/img/scene/hikaru1.jpg);
-  --img-hiyyih-small:url(../img/scene/hiyyih1.jpg);
-  --img-youngeun-small:url(../img/scene/youngeun1.jpg);
-  --img-yeseo-small:url(../img/scene/yeseo1.jpg);
-  --img-yujin-profile:url(../img/scene/yujin2.jpg);
-  --img-xiaoting-profile:url(../img/scene/xiaoting2.jpg);
-  --img-mashiro-profile:url(../img/scene/mashiro2.jpg);
-  --img-chaehyun-profile:url(../img/scene/chae2.jpg);
-  --img-dayeon-profile:url(../img/scene/dayeon2.jpg);
-  --img-hikaru-profile:url(../img/scene/hikaru2.jpg);
-  --img-hiyyih-profile:url(../img/scene/hiyyih2.jpg);
-  --img-youngeun-profile:url(../img/scene/youngeun2.jpg);
-  --img-yeseo-profile:url(../img/scene/yeseo2.jpg);
-  --profile-position:center;
-  --hiyyih-position:right;
+  --bg-tracks: #fff;
+  --bg-profile: #ECDCFF;
+  --border-color: 1px solid #C1AED7;
+  --txt-color: #000;
+  --panel-bg:#fff;
+  --panel-icon:rgba(193, 159, 230, 0.5);
+  --panel-stroke:3px #fff;
+  --panel-link:#A97DDB;
+  --star-color:#E5CEFF;
+  --universe-color:#D0AFF6;
+  --mv-bg:#A97DDB;
+  --sub-color:#fff;
+  --sub-border:3px #D0AFF6;
+  /***Images INDEX***/
+  --img-header: url(../img/scene/group1.jpg);
+  --img-footer: url(../img/scene/group2.jpg);
+  --img-cover: url(../img/project_light.jpg);
+  --img-titre-section: url(../img/kep3_section.png);
+  --color-section-h1: #A97DDB;
+  --img-yujin-small: url(../img/scene/yujin1.jpg);
+  --img-xiaoting-small: url(../img/scene/xiaoting1.jpg);
+  --img-mashiro-small: url(../img/scene/mashiro1.jpg);
+  --img-chaehyun-small: url(../img/scene/chae1.jpg);
+  --img-dayeon-small: url(../img/scene/dayeon1.jpg);
+  --img-hikaru-small: url(/img/scene/hikaru1.jpg);
+  --img-hiyyih-small: url(../img/scene/hiyyih1.jpg);
+  --img-youngeun-small: url(../img/scene/youngeun1.jpg);
+  --img-yeseo-small: url(../img/scene/yeseo1.jpg);
+  /***Image Profils***/
+  --img-yujin-profile: url(../img/scene/yujin2.jpg);
+  --img-xiaoting-profile: url(../img/scene/xiaoting2.jpg);
+  --img-mashiro-profile: url(../img/scene/mashiro2.jpg);
+  --img-chaehyun-profile: url(../img/scene/chae2.jpg);
+  --img-dayeon-profile: url(../img/scene/dayeon2.jpg);
+  --img-hikaru-profile: url(../img/scene/hikaru2.jpg);
+  --img-hiyyih-profile: url(../img/scene/hiyyih2.jpg);
+  --img-youngeun-profile: url(../img/scene/youngeun2.jpg);
+  --img-yeseo-profile: url(../img/scene/yeseo2.jpg);
+  --profile-position: center;
+  --hiyyih-position: right;
+  --bg-full-profile: #ECDCFF;
 }
 
 [data-theme=dark] {
-  --color-bg:#221B2F;
-  --color-text:#fff;
+  /***COULEURS INDEX***/
+  --color-bg: #221B2F;
+  --color-text: #fff;
   --violet-k: #A97DDB;
   --bg-title-tracks: #594875;
   --bg-section: #28273B;
-  --bg-tracks:#C9A9ED;
-  --bg-profile:#56467E;
-  --img-header:url(../img/nous/group1.jpg);
-  --img-footer:url(../img/nous/group2.jpg);
-  --img-cover:url(../img/project_dark.jpg);
-  --img-yujin-small:url(../img/nous/yujin1.jpg);
-  --img-xiaoting-small:url(../img/nous/xiaoting1.jpg);
-  --img-mashiro-small:url(../img/nous/mashiro1.jpg);
-  --img-chaehyun-small:url(../img/nous/chae1.jpg);
-  --img-dayeon-small:url(../img/nous/dayeon1.jpg);
-  --img-hikaru-small:url(/img/nous/hikaru1.jpg);
-  --img-hiyyih-small:url(../img/nous/hiyyih1.jpg);
-  --img-youngeun-small:url(../img/nous/youngeun1.jpg);
-  --img-yeseo-small:url(../img/nous/yeseo1.jpg);
-  --img-yujin-profile:url(../img/nous/yujin2.jpg);
-  --img-xiaoting-profile:url(../img/nous/xiaoting2.jpg);
-  --img-mashiro-profile:url(../img/nous/mashiro2.jpg);
-  --img-chaehyun-profile:url(../img/nous/chae2.jpg);
-  --img-dayeon-profile:url(../img/nous/dayeon2.jpg);
-  --img-hikaru-profile:url(../img/nous/hikaru2.jpg);
-  --img-hiyyih-profile:url(../img/nous/hiyyih2.jpg);
-  --img-youngeun-profile:url(../img/nous/youngeun2.jpg);
-  --img-yeseo-profile:url(../img/nous/yeseo2.jpg);
-  --profile-position:top;
-  --hiyyih-position:center;
+  --bg-tracks: #C9A9ED;
+  --bg-profile: #56467E;
+  --border-color: 1px solid #190B29;
+  --txt-color: #fff;
+  --panel-bg:#A97DDB;
+  --panel-icon:rgba(193, 159, 230, 0.5);
+  --panel-stroke:0px #fff;
+  --panel-link:#fff;
+  --star-color:#684E86;
+  --universe-color:#593C7B;
+  --mv-bg:#56467E;
+  --sub-color:#D0AFF6;
+  --sub-border:3px #fff;
+  /***Images INDEX***/
+  --img-header: url(../img/nous/group1.jpg);
+  --img-footer: url(../img/nous/group2.jpg);
+  --img-cover: url(../img/project_dark.jpg);
+  --img-titre-section: url(../img/kep3_section_dark.png);
+  --color-section-h1: #fff;
+  --img-yujin-small: url(../img/nous/yujin1.jpg);
+  --img-xiaoting-small: url(../img/nous/xiaoting1.jpg);
+  --img-mashiro-small: url(../img/nous/mashiro1.jpg);
+  --img-chaehyun-small: url(../img/nous/chae1.jpg);
+  --img-dayeon-small: url(../img/nous/dayeon1.jpg);
+  --img-hikaru-small: url(/img/nous/hikaru1.jpg);
+  --img-hiyyih-small: url(../img/nous/hiyyih1.jpg);
+  --img-youngeun-small: url(../img/nous/youngeun1.jpg);
+  --img-yeseo-small: url(../img/nous/yeseo1.jpg);
+  /***Image Profils***/
+  --img-yujin-profile: url(../img/nous/yujin2.jpg);
+  --img-xiaoting-profile: url(../img/nous/xiaoting2.jpg);
+  --img-mashiro-profile: url(../img/nous/mashiro2.jpg);
+  --img-chaehyun-profile: url(../img/nous/chae2.jpg);
+  --img-dayeon-profile: url(../img/nous/dayeon2.jpg);
+  --img-hikaru-profile: url(../img/nous/hikaru2.jpg);
+  --img-hiyyih-profile: url(../img/nous/hiyyih2.jpg);
+  --img-youngeun-profile: url(../img/nous/youngeun2.jpg);
+  --img-yeseo-profile: url(../img/nous/yeseo2.jpg);
+  --profile-position: top;
+  --hiyyih-position: center;
+  --bg-full-profile: #594875;
 }
 
 body {
@@ -131,15 +165,15 @@ body header titre h1 {
 body .titre-section {
   width: 100%;
   height: 390px;
-  background: url(../img/kep3_section.png);
+  background: var(--img-titre-section);
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid #C1AED7;
-  border-bottom: 1px solid #C1AED7;
+  border-top: var(--border-color);
+  border-bottom: var(--border-color);
 }
 body .titre-section h1 {
   font-family: "Playfair Display", serif;
@@ -147,7 +181,7 @@ body .titre-section h1 {
   font-weight: 600;
   text-transform: uppercase;
   font-style: italic;
-  color: var(--violet-k);
+  color: var(--color-section-h1);
 }
 body .titre-section h2 {
   font-family: "Playfair Display", serif;
@@ -255,7 +289,7 @@ body .album .main-tracks .main-module .main-bg {
   width: 400px;
   height: 360px;
   background: url(https://placehold.co/400x360.png);
-  border: 1px solid #C1AED7;
+  border: var(--border-color);
 }
 body .album .main-tracks .main-module .main-bg .main-color {
   background: rgba(228, 202, 255, 0.6);
@@ -360,8 +394,8 @@ body .album .second-tracks {
 }
 body .album .second-tracks .list {
   width: 62%;
-  background: #fff;
-  border: 1px solid #C1AED7;
+  background: var(--panel-bg);
+  border: var(--border-color);
   border-bottom: 0px;
 }
 body .album .second-tracks .list .title {
@@ -371,10 +405,10 @@ body .album .second-tracks .list .title {
   flex-direction: row;
   overflow: hidden;
   align-items: center;
-  border-bottom: 1px solid #C1AED7;
+  border-bottom: var(--border-color);
 }
 body .album .second-tracks .list .title i {
-  color: rgba(193, 159, 230, 0.5);
+  color: var(--panel-icon);
   font-size: 5.3rem;
   position: relative;
   top: 0.3rem;
@@ -388,6 +422,7 @@ body .album .second-tracks .list .title p {
   float: right;
   position: relative;
   top: 0.5rem;
+  color: var(--txt-color);
 }
 body .album .second-tracks .list .title b {
   font-family: "Playfair Display", serif;
@@ -401,12 +436,12 @@ body .album .second-tracks .list .title b {
 body .album .second-tracks .list .title span {
   font-family: "Playfair Display", serif;
   font-size: 2.3rem;
-  color: var(--violet-k);
+  color: var(--panel-link);
   padding: 15px;
   font-weight: 600;
   line-height: 100%;
   paint-order: stroke fill;
-  -webkit-text-stroke: 3px #fff;
+  -webkit-text-stroke: var(--panel-stroke);
   position: relative;
   left: -1.8rem;
   top: 0rem;
@@ -435,7 +470,7 @@ body .album .second-tracks .title-tracks .mv .mv-title {
   font-weight: 600;
   font-size: 1.2rem;
   color: #fff;
-  background: var(--violet-k);
+  background: var(--mv-bg);
   text-transform: uppercase;
   line-height: 100%;
   display: flex;
@@ -469,12 +504,12 @@ body .contact .sub-title {
 body .contact .sub-title h3 {
   font-family: "Playfair Display", serif;
   font-weight: 800;
-  color: #fff;
+  color: var(--sub-color);
   font-size: 4.3rem;
   position: relative;
   z-index: 2;
   paint-order: stroke fill;
-  -webkit-text-stroke: 3px #D0AFF6;
+  -webkit-text-stroke: var(--sub-border);
 }
 body .contact .kep1er-about {
   display: flex;
@@ -485,8 +520,8 @@ body .contact .kep1er-about {
   margin: 0px 0px 50px 0px;
 }
 body .contact .kep1er-about .kep1er-desc {
-  background: #fff;
-  border-right: 1px solid #C1AED7;
+  background: var(--color-bg);
+  border-right: var(--border-color);
   height: 150px;
   overflow: hidden;
 }
@@ -495,13 +530,13 @@ body .contact .kep1er-about .kep1er-desc p {
   font-family: montserrat;
   font-size: 1rem;
   text-align: justify;
-  color: #000;
+  color: var(--txt-color);
 }
 body .contact .kep1er-about .project,
 body .contact .kep1er-about .group,
 body .contact .kep1er-about .k-profile {
-  background: #fff;
-  border-right: 1px solid #C1AED7;
+  background: var(--panel-bg);
+  border-right: var(--border-color);
   height: 150px;
   overflow: hidden;
   display: flex;
@@ -511,7 +546,7 @@ body .contact .kep1er-about .k-profile {
 body .contact .kep1er-about .project i,
 body .contact .kep1er-about .group i,
 body .contact .kep1er-about .k-profile i {
-  color: rgba(193, 159, 230, 0.5);
+  color: var(--panel-icon);
   font-size: 9rem;
   position: relative;
   z-index: 1;
@@ -523,12 +558,12 @@ body .contact .kep1er-about .group a,
 body .contact .kep1er-about .k-profile a {
   position: relative;
   z-index: 2;
-  color: #000;
+  color: var(--txt-color);
   text-decoration: none;
   font-weight: bold;
   font-family: montserrat;
   paint-order: stroke fill;
-  -webkit-text-stroke: 3px #fff;
+  -webkit-text-stroke: var(--panel-stroke);
   font-size: 1rem;
   text-transform: uppercase;
   top: -2rem;
@@ -550,18 +585,18 @@ body .contact .kep1er-tab .kep1er-socials {
 body .contact .kep1er-tab .kep1er-socials .top {
   display: flex;
   flex-direction: row;
-  border: 1px solid #C1AED7;
+  border: var(--border-color);
   border-bottom: 0px;
 }
 body .contact .kep1er-tab .kep1er-socials .top .youtube {
-  background: #fff;
-  border-right: 1px solid #C1AED7;
+  background: var(--panel-bg);
+  border-right: var(--border-color);
   padding: 30px;
   height: 80px;
   overflow: hidden;
 }
 body .contact .kep1er-tab .kep1er-socials .top .youtube a {
-  color: var(--violet-k);
+  color: var(--panel-link);
   font-family: "Playfair Display", serif;
   font-weight: 800;
   font-size: 1.4rem;
@@ -571,18 +606,18 @@ body .contact .kep1er-tab .kep1er-socials .top .youtube a {
   z-index: 4;
   top: -0.4rem;
   paint-order: stroke fill;
-  -webkit-text-stroke: 3px #fff;
+  -webkit-text-stroke: var(--panel-stroke);
 }
 body .contact .kep1er-tab .kep1er-socials .top .youtube i {
   position: relative;
-  color: rgba(193, 159, 230, 0.5);
+  color: var(--panel-icon);
   font-size: 6rem;
   z-index: 1;
   top: -3.2rem;
   left: 4.2rem;
 }
 body .contact .kep1er-tab .kep1er-socials .top .social-title {
-  background: #fff;
+  background: var(--color-bg);
   padding: 30px;
   height: 80px;
   overflow: hidden;
@@ -590,7 +625,7 @@ body .contact .kep1er-tab .kep1er-socials .top .social-title {
 body .contact .kep1er-tab .kep1er-socials .top .social-title span {
   white-space: nowrap;
   font-style: italic;
-  color: #D0AFF6;
+  color: var(--universe-color);
   font-family: "Playfair Display", serif;
   font-weight: 600;
   font-size: 5.7rem;
@@ -602,11 +637,11 @@ body .contact .kep1er-tab .kep1er-socials .top .social-title span {
 body .contact .kep1er-tab .kep1er-socials .bottom {
   display: flex;
   flex-direction: row;
-  border: 1px solid #C1AED7;
+  border: var(--border-color);
 }
 body .contact .kep1er-tab .kep1er-socials .bottom .insta {
-  border-right: 1px solid #C1AED7;
-  background: #fff;
+  border-right: var(--border-color);
+  background: var(--panel-bg);
   flex: 1;
   padding: 20px;
   height: 70px;
@@ -616,7 +651,7 @@ body .contact .kep1er-tab .kep1er-socials .bottom .insta {
   justify-content: space-between;
 }
 body .contact .kep1er-tab .kep1er-socials .bottom .insta a {
-  color: var(--violet-k);
+  color: var(--panel-link);
   font-family: "Playfair Display", serif;
   font-weight: 600;
   font-size: 1.2rem;
@@ -626,15 +661,15 @@ body .contact .kep1er-tab .kep1er-socials .bottom .insta a {
 }
 body .contact .kep1er-tab .kep1er-socials .bottom .insta i {
   position: relative;
-  color: rgba(193, 159, 230, 0.5);
+  color: var(--panel-icon);
   font-size: 3.5rem;
   z-index: 1;
   z-index: 1;
   top: -0.8rem;
 }
 body .contact .kep1er-tab .kep1er-socials .bottom .twitter {
-  border-right: 1px solid #C1AED7;
-  background: #fff;
+  border-right: var(--border-color);
+  background: var(--panel-bg);
   flex: 1;
   padding: 20px;
   height: 70px;
@@ -644,7 +679,7 @@ body .contact .kep1er-tab .kep1er-socials .bottom .twitter {
   justify-content: space-between;
 }
 body .contact .kep1er-tab .kep1er-socials .bottom .twitter a {
-  color: var(--violet-k);
+  color: var(--panel-link);
   font-family: "Playfair Display", serif;
   font-weight: 600;
   font-size: 1.2rem;
@@ -654,14 +689,14 @@ body .contact .kep1er-tab .kep1er-socials .bottom .twitter a {
 }
 body .contact .kep1er-tab .kep1er-socials .bottom .twitter i {
   position: relative;
-  color: rgba(193, 159, 230, 0.5);
+  color: var(--panel-icon);
   font-size: 4.8rem;
   z-index: 1;
   z-index: 1;
   top: -1.4rem;
 }
 body .contact .kep1er-tab .kep1er-socials .bottom .jp {
-  background: #fff;
+  background: var(--panel-bg);
   flex: 1;
   padding: 20px;
   height: 70px;
@@ -671,7 +706,7 @@ body .contact .kep1er-tab .kep1er-socials .bottom .jp {
   justify-content: space-between;
 }
 body .contact .kep1er-tab .kep1er-socials .bottom .jp a {
-  color: var(--violet-k);
+  color: var(--panel-link);
   font-family: "Playfair Display", serif;
   font-weight: 600;
   font-size: 1.2rem;
@@ -681,17 +716,17 @@ body .contact .kep1er-tab .kep1er-socials .bottom .jp a {
 }
 body .contact .kep1er-tab .kep1er-socials .bottom .jp i {
   position: relative;
-  color: rgba(193, 159, 230, 0.5);
+  color: var(--panel-icon);
   font-size: 4.5rem;
   z-index: 1;
   z-index: 1;
   top: -1.3rem;
 }
 body .contact .kep1er-tab .icon-socials {
-  border: 1px solid #C1AED7;
+  border: var(--border-color);
   border-left: 0px;
   width: 20%;
-  background: #fff;
+  background: var(--color-bg);
   height: 9.5rem;
   overflow: hidden;
 }
@@ -699,7 +734,7 @@ body .contact .kep1er-tab .icon-socials i {
   position: relative;
   z-index: 1;
   font-size: 8rem;
-  color: #E5CEFF;
+  color: var(--star-color);
   top: -6rem;
   left: 11.2rem;
 }
@@ -709,7 +744,7 @@ body .contact .kep1er-tab .icon-socials a {
   font-family: montserrat;
   font-weight: 800;
   paint-order: stroke fill;
-  -webkit-text-stroke: 3px #fff;
+  -webkit-text-stroke: var(--panel-stroke);
   font-size: 1rem;
   padding: 20px;
   top: 1rem;
@@ -720,17 +755,18 @@ body .contact .kep1er-tab .icon-socials a {
 body .contact .kep1er-tab .icon-socials p {
   font-family: montserrat;
   font-size: 0.7rem;
-  color: #000;
+  color: var(--txt-color);
   text-transform: uppercase;
   position: relative;
   z-index: 2;
   padding: 20px;
 }
 body .contact .contact-form {
-  background: #fff;
-  border: 1px solid #C1AED7;
+  background: var(--color-bg);
+  border: var(--border-color);
   width: 70%;
   margin: 0px 0px 80px 0px;
+  color: var(--txt-color);
 }
 body .contact .contact-form .contact-both {
   display: flex;
@@ -759,7 +795,6 @@ body .contact .contact-form .contact-both .contact-link .links {
 body .contact .contact-form .contact-both .contact-link .links b {
   font-family: montserrat;
   text-transform: uppercase;
-  color: #000;
   font-size: 1rem;
 }
 body .contact .contact-form .contact-both .contact-link .links a {
@@ -851,7 +886,7 @@ body .profils .tab-content .tab-pane .k-profile {
   border-bottom: 1px solid #C1AED7;
 }
 body .profils .tab-content .tab-pane .k-profile .profile-info {
-  background: #ECDCFF;
+  background: var(--bg-full-profile);
   border-right: 1px solid #C1AED7;
   width: 40%;
   height: 800px;
@@ -1056,7 +1091,7 @@ body .project-cover {
   justify-content: center;
 }
 body .project-txt {
-  background: #ECDCFF;
+  background: var(--bg-section);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1067,45 +1102,38 @@ body .project-txt .sub-title {
   width: 70%;
   padding: 50px 0px 30px 0px;
 }
-body .project-txt .sub-title .sub-line {
-  border: 1px solid #fff;
-  width: 100%;
-  position: relative;
-  z-index: 1;
-  top: 3rem;
-}
 body .project-txt .sub-title h3 {
   font-family: "Playfair Display", serif;
   font-weight: 800;
-  color: #fff;
+  color: var(--sub-color);
   font-size: 4.3rem;
   position: relative;
   z-index: 2;
   paint-order: stroke fill;
-  -webkit-text-stroke: 3px #D0AFF6;
+  -webkit-text-stroke: var(--sub-border);
 }
 body .project-txt .project-gp9 {
   width: 70%;
-  background: #fff;
-  border: 1px solid #C1AED7;
+  background: var(--color-bg);
+  border: var(--border-color);
 }
 body .project-txt .project-gp9 p {
   padding: 20px;
   font-size: 1rem;
-  color: #000;
+  color: var(--txt-color);
   text-align: justify;
   font-family: montserrat;
 }
 body .project-txt .project-kep1er {
   width: 70%;
-  background: #fff;
-  border: 1px solid #C1AED7;
+  background: var(--color-bg);
+  border: var(--border-color);
   margin-bottom: 60px;
 }
 body .project-txt .project-kep1er p {
   padding: 20px;
   font-size: 1rem;
-  color: #000;
+  color: var(--txt-color);
   text-align: justify;
   font-family: montserrat;
 }
@@ -1117,16 +1145,34 @@ body .project-txt .project-on {
   align-items: center;
 }
 body .project-txt .project-on .official-website {
-  background: #fff;
-  border: 1px solid #C1AED7;
+  background: var(--color-bg);
+  border: var(--border-color);
   border-top: 0px;
+  border-right: 0px;
+  color: var(--txt-color);
+  height: 85px;
+  padding: 20px;
+  text-align: center;
+}
+body .project-txt .project-on .official-website a {
+  font-family: montserrat;
+  color: var(--panel-link);
+  text-decoration: none;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1.3rem;
 }
 body .project-txt .project-on .official-credit {
-  background: #fff;
-  border: 1px solid #C1AED7;
+  background: var(--color-bg);
+  border: var(--border-color);
   border-top: 0px;
   font-family: montserrat;
   font-size: 0.9rem;
+  color: var(--txt-color);
+}
+body .project-txt .project-on .official-credit p {
+  padding: 10px;
+  font-size: 1rem;
 }
 body .project-txt .credit-tab {
   width: 70%;
@@ -1143,8 +1189,8 @@ body .project-txt .credit-tab .credit-top {
   align-items: stretch;
 }
 body .project-txt .credit-tab .credit-top .credit-design {
-  background: #fff;
-  border: 1px solid #C1AED7;
+  background: var(--color-bg);
+  border: var(--border-color);
   border-right: 0px;
   display: flex;
   flex-direction: row;
@@ -1155,26 +1201,26 @@ body .project-txt .credit-tab .credit-top .credit-design p {
   padding: 20px;
   font-family: montserrat;
   font-size: 1rem;
-  color: #000;
+  color: var(--txt-color);
 }
 body .project-txt .credit-tab .credit-top .credit-info {
-  background: #fff;
-  border: 1px solid #C1AED7;
+  background: var(--color-bg);
+  border: var(--border-color);
 }
 body .project-txt .credit-tab .credit-top .credit-info p {
   padding: 20px;
   font-family: montserrat;
   font-size: 1rem;
-  color: #000;
+  color: var(--txt-color);
 }
 body .project-txt .credit-tab .credit-other {
-  background: #fff;
-  border: 1px solid #C1AED7;
+  background: var(--color-bg);
+  border: var(--border-color);
   border-top: 0px;
 }
 body .project-txt .credit-tab .credit-other p {
   padding: 20px;
   font-family: montserrat;
   font-size: 1rem;
-  color: #000;
+  color: var(--txt-color);
 }/*# sourceMappingURL=style.css.map */
