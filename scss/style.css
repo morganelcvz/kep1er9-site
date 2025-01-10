@@ -26,7 +26,7 @@
   --img-cover: url(../img/project_light.jpg);
   --img-titre-section: url(../img/kep3_section.png);
   --color-section-h1: #A97DDB;
-  --img-yujin-small: url(../img/scene/yujin1.jpg);
+  --img-yujin-small: url(img/scene/yujin1.jpg);
   --img-xiaoting-small: url(../img/scene/xiaoting1.jpg);
   --img-mashiro-small: url(../img/scene/mashiro1.jpg);
   --img-chaehyun-small: url(../img/scene/chae1.jpg);
@@ -77,7 +77,7 @@
   --img-cover: url(../img/project_dark.jpg);
   --img-titre-section: url(../img/kep3_section_dark.png);
   --color-section-h1: #fff;
-  --img-yujin-small: url(../img/nous/yujin1.jpg);
+  --img-yujin-small: url(img/nous/yujin1.jpg);
   --img-xiaoting-small: url(../img/nous/xiaoting1.jpg);
   --img-mashiro-small: url(../img/nous/mashiro1.jpg);
   --img-chaehyun-small: url(../img/nous/chae1.jpg);
