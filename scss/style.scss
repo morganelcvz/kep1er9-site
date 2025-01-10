@@ -13,6 +13,8 @@
     --border-color: 1px solid #C1AED7;
     --txt-color: #000;
 
+    /***COULEURS Crédits etc***/
+
     --panel-bg:#fff;
     --panel-icon:rgba(193, 159, 230, 0.5);
     --panel-stroke:3px #fff;
@@ -72,6 +74,8 @@
 
     --border-color: 1px solid #190B29;
     --txt-color: #fff;
+
+    /***COULEURS Crédits etc***/
 
     --panel-bg:#A97DDB;
     --panel-icon:rgba(193, 159, 230, 0.5);
@@ -894,6 +898,20 @@ body {
                     display: flex;
                     flex-direction: column;
                     padding: 20px;
+
+                    label {
+                        font-family: montserrat;
+                        padding:5px 0px;
+                    }
+
+                    input {
+                        border:var(--border-color);
+                    }
+
+                    textarea {
+                        border:var(--border-color);
+                        margin-top:1.4rem;
+                    }
                 }
 
                 .contact-link {
@@ -982,14 +1000,18 @@ body {
         .nav-tabs {
             border: 0px;
             width: 100%;
+            height:100px;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
+            background:var(--color-bg);
+            border:var(--border-color);
 
 
             .nav-link {
                 border: 0px;
+                background:var(--color-bg);
 
                 i {
                     font-size: 2rem;
@@ -1034,11 +1056,10 @@ body {
                     display: flex;
                     flex-direction: row;
                     width: 100%;
-                    border-bottom: 1px solid #C1AED7;
 
                     .profile-info {
                         background: var(--bg-full-profile);
-                        border-right: 1px solid #C1AED7;
+                        border-right:var(--border-color);
                         width: 40%;
                         height: 800px;
                         display: flex;
@@ -1059,12 +1080,12 @@ body {
                                 width: 60px;
                                 height: 60px;
                                 overflow: hidden;
-                                border: 1px solid #C1AED7;
-                                background: #fff;
+                                border:var(--border-color);
+                                background:var(--panel-bg);
                                 overflow: hidden;
 
                                 i {
-                                    color: rgba(193, 159, 230, 0.5);
+                                    color:var(--panel-icon);
                                     font-size: 4.5rem;
                                     position: relative;
                                     top: -0.5rem;
@@ -1075,8 +1096,8 @@ body {
                             .p-title {
                                 height: 60px;
                                 width: 70%;
-                                background: #fff;
-                                border: 1px solid #C1AED7;
+                                background:var(--color-bg);
+                                border:var(--border-color);
                                 border-left: 0px;
                                 overflow: hidden;
 
@@ -1111,30 +1132,30 @@ body {
                                         flex-direction: row;
 
                                         .p-label {
-                                            background: #fff;
-                                            border: 1px solid #C1AED7;
+                                            background:var(--color-bg);
+                                            border:var(--border-color);
                                             border-right: 0px;
                                             border-bottom: 0px;
                                             width: 150px;
                                             padding: 15px;
                                             font-family: montserrat;
                                             font-weight: 800;
-                                            color: #000;
+                                            color:var(--txt-color);
                                             line-height: 100%;
                                             text-transform: uppercase;
                                             font-size: 1rem;
                                         }
 
                                         .p-info {
-                                            background: #fff;
-                                            border: 1px solid #C1AED7;
+                                            background:var(--panel-bg);
+                                            border:var(--border-color);
                                             border-right: 0px;
                                             border-bottom: 0px;
                                             width: 230px;
                                             padding: 15px;
                                             font-family: montserrat;
                                             font-weight: 400;
-                                            color: #000;
+                                            color:var(--txt-color);
                                             font-size: 1rem;
                                             line-height: 100%;
                                         }
@@ -1142,8 +1163,8 @@ body {
                                 }
 
                                 .p-box {
-                                    background: #fff;
-                                    border: 1px solid #C1AED7;
+                                    background:var(--bg-tracks);
+                                    border:var(--border-color);
                                     border-bottom: 0px;
                                     width: 105px;
 
@@ -1194,27 +1215,27 @@ body {
                                 flex-direction: row;
 
                                 .label {
-                                    background: #fff;
-                                    border: 1px solid #C1AED7;
+                                    background:var(--color-bg);
+                                    border:var(--border-color);
                                     border-right: 0px;
                                     width: 150px;
                                     padding: 15px;
                                     font-family: montserrat;
                                     font-weight: 800;
-                                    color: #000;
+                                    color:var(--txt-color);
                                     line-height: 100%;
                                     text-transform: uppercase;
                                     font-size: 1rem;
                                 }
 
                                 .info {
-                                    background: #fff;
-                                    border: 1px solid #C1AED7;
+                                    background:var(--panel-bg);
+                                    border:var(--border-color);
                                     width: 335px;
                                     padding: 15px;
                                     font-family: montserrat;
                                     font-weight: 400;
-                                    color: #000;
+                                    color:var(--txt-color);
                                     font-size: 1rem;
                                     line-height: 100%;
                                 }
@@ -1230,14 +1251,14 @@ body {
                             padding: 40px 0px;
 
                             .p-bio {
-                                background: #fff;
-                                border: 1px solid #C1AED7;
+                                background:var(--color-bg);
+                                border:var(--border-color);
                                 width: 80%;
                                 height: 280px;
 
                                 span {
                                     font-family: montserrat;
-                                    color: #000;
+                                    color:var(--txt-color);
                                     font-weight: 800;
                                     text-transform: uppercase;
                                 }
@@ -1246,7 +1267,7 @@ body {
                                     font-family: montserrat;
                                     font-size: 0.9rem;
                                     text-align: justify;
-                                    color: #000;
+                                    color:var(--txt-color);
                                     padding: 20px;
                                 }
                             }
@@ -1417,6 +1438,12 @@ body {
                         font-size: 1rem;
                         color: var(--txt-color);
                     }
+
+                    a {
+                        color:var(--panel-link);
+                        text-decoration: none;
+                        font-weight: bold;
+                    }
                 }
             }
 
@@ -1430,6 +1457,11 @@ body {
                     font-family: montserrat;
                     font-size: 1rem;
                     color: var(--txt-color);
+                }
+
+                a {
+                    color:var(--panel-link);
+                    font-weight: bold;
                 }
             }
         }
